@@ -217,6 +217,14 @@ ADVICE = [
 # ─── Model ────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
+    import gdown
+    import os
+    if not os.path.exists('best_dr_finetuned.keras'):
+        gdown.download(
+            'https://drive.google.com/uc?id=1AHb4caKZbNXBOg9u0xROjJvU1pVgqJk-',
+            'best_dr_finetuned.keras',
+            quiet=False
+        )
     return tf.keras.models.load_model('best_dr_finetuned.keras')
 
 def predict(img: Image.Image, model):
