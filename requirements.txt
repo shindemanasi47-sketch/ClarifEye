@@ -3,3 +3,4 @@ tensorflow-cpu
 Pillow
 plotly
 gdown
+numpy
