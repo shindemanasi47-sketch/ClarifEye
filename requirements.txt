@@ -1,6 +1,7 @@
 streamlit
-tensorflow-cpu
+keras
 Pillow
 plotly
 gdown
 numpy
+h5py
